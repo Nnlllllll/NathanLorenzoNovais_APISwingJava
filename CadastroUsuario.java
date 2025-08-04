@@ -19,7 +19,7 @@ public class CadastroUsuario {
         botaoCadastrar.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 String nomeCompleto = campoNome.getText() + " " + campoSobrenome.getText();
-                if((nomeCompleto.isEmpty())){
+                if((nomeCompleto.isBlank())){
                     JOptionPane.showMessageDialog(frame, "Preencha os campos corretamente");
                     return;
                 }
@@ -37,4 +37,5 @@ public class CadastroUsuario {
         // Exibir a janela
         frame.setVisible(true);
     }
+
 }
